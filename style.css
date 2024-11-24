@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body,html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height:100%;
+
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3 {
+    padding-bottom: 20px;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  
+  .container {
+    margin: auto;
+    max-width: 900px;
+    padding: 0 20px;
+    overflow: auto;
+    
+  }
+  #navbar {
+    background: #333;
+    color: #fff;
+    overflow: auto;
+  }
+  
+  #navbar a {
+    color: #fff;
+  }
+  
+  #navbar .logo {
+    float: left;
+    padding-top: 20px;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    float: right;
+  }
+  
+  #navbar ul li {
+    float: left;
+  }
+  
+  #navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #navbar ul li a:hover {
+    background: #444;
+    color: #f09841;
+  }
+  .box {
+    float: left;
+    width:33.3%;
+    padding: 50px;
+    text-align: center;
+  }
+  .box i {
+    margin-bottom: 10px;
+  }
+  /* HOME */
+  .home{
+    width: 100%;
+    height: 100%;
+
+  }
+  .home>.head1{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+     font-weight:600 ;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 50px;
+    text-wrap: nowrap;
+    animation: slider 20s infinite linear;
+    
+}
+  
+.home>.head2{
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+     font-weight:600 ;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 50px;
+    text-wrap: nowrap;
+    animation: slider 20s infinite linear;
+    /* background-color:white ; */
+
+}
+@keyframes slider {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-50%);
+    }
+}
+.home> img{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 600px;
+    width: 1350px;
+}
+  .home>.para1{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  .home>.para2{
+    position: absolute;
+    top: 68%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  
+  
+  
+  /* About-info */
+  #about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+  }
+  
+  #about-info .info-right img {
+    display: block;
+
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+  }
+  
+  #about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+  }
+  
+  /* CONTACT FORM */
+  #contact-form{
+    background-color: #cecea2;
+    height: 700px;
+    background-color: #9c8771;
+  }
+  #contact-form .form-group {
+    margin-bottom: 20px;
+    
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    border-color: black;
+    border-width: 2px;
+
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px #ddd solid;
+    margin-left: 25px;
+  }
+  
+  
+  #contact-form textarea {
+    height: 200px;
+    border-color: black;
+    border-width: 2px;
+  }
+  
+  #contact-form input:focus,
+  #contact-form textarea:focus {
+    outline: none;
+    border-color: #c5a722;
+  }
+  .form-group >.btn{
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ margin-left: 400px;
+  }
+  
+  .slider{
+    width:100%;
+    height: 650px;
+    background-color: #9c8064 ;
+    
+}
+
+.images{
+    width: 600px; 
+    height: 550px;
+    display: flex;
+    
+    transition: all 0.15s ease;
+    
+
+}
+.images img{
+    height: 480px;
+    width: 400px;
+    transition: all 0.15s ease;
+    padding: 0;
+    margin: 5px;
+    justify-content: center;
+}
+
+.slider input{
+    display: none;
+    
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    }
+.dots label
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin: 5px;
+
+}
+.dots label:hover{background: #131111;}
+
+#img1:checked ~ .m1
+{
+    margin-left: -100%;
+} 
+#img2:checked ~ .m2
+{
+    margin-left: -200%;
+}
+#img3:checked ~ .m3
+{
+    margin-left: -300%;
+}
+#img4:checked ~ .m4
+{
+    margin-left: -400%;
+}
+#img5:checked ~ .m5
+{
+
+margin-left: -500%;
+}
+c.about{
+background-color: #9c8064;
+}
+.about>img{
+    width: 500px;
+        height:500px;
+        margin-left: 10px;
+    margin-top: 40px;
+    }
+    .about>h1{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-left: 500px;
+}
+.about>h3{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 700px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .about>h5{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 700px;
+        position: absolute;
+        top: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        }
+        .about>p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 800px;
+            position: absolute;
+            top: 85%;
+            transform: translate(-50%,-50%);
+            font-size: 20px;
+            }
+           
+              .booking{
+                width: 100%;
+                height: 650px;
+                background-color: #a19181;
+                position: absolute;
+                top: 67%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+ 
+              }
+              .booking > .bookimg{
+                height: 500px;
+                width: 500px;
+                margin-right: 100px;
+                 margin-bottom:50px ;
+                background-color: #a19181;
+                position: relative;
+                margin-top: 100px;
+                
+              }
+              .booking >.bookform  #book-form
+              {
+                width: 500px;
+                background-color: #a19181;
+                height:500px;
+                position: relative; 
+                margin-top: 50px;
+                margin-left:5px;
+              } 
+              .container-f {
+                width:100%;
+                height: 140px;
+                position: absolute;
+                top: 600px;
+                left: 675px;
+                transform: translate(-50%,50%);
+                overflow: hidden;
+                align-items: center;
+               justify-content: center;
+               text-align: center;
+               background-color:#333;
+              }
+              
+  
+ .container-f >.box {
+    width: 300px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+    background-color: #333;
+    margin-left: 110px;
+    
+  }.container-f>.box p{
+    margin-top: 5px;
+    color:white;
+    margin-left: 20px;
+  }
+  
+  .container-f>.box i {
+    margin-bottom: 5px;
+
+  }
+  .foot
+  {
+    width: 100%;
+    height:80px;
+    background-color: #444;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 850px;
+    left: 675px;
+  }
+              #main-footer {
+                text-align: center;
+                background-color:#444;
+                color:white;
+                padding: 20px;
+                 font-weight: 900;
+                position: relative;
+                animation: slider 20s infinite linear;
+               
+            }
+    
+            @keyframes main-footer {
+                from {
+                    transform: translate(0);
+                }
+                to {
+                    transform: translate(-100%);
+                }
+              }
+             
